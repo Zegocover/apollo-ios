@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: apollo-ios
+spec:
+  owner: apollographql/client-swift
+  domain: delivery
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: apollo-ios
+  title: Apollo Ios
+  description: 📱  A strongly-typed, caching GraphQL client for iOS, written in Swift.
+  tags:
+    - swift
+    - ruby
+    - shell
+  annotations:
+    backstage.io/source-location: url:https://github.com/Zegocover/apollo-ios/
+    backstage.io/techdocs-ref: dir:.
+    buildkite.com/project-slug: tego/apollo-ios
+    snyk.io/org-id: 00dc4193-3d34-4bb9-b51c-91c6362e0796
+    snyk.io/targets: Zegocover/apollo-ios
+  links: []
+spec:
+  type: tool
+  owner: apollographql/client-swift
+  lifecycle: production
+  system: apollo-ios
